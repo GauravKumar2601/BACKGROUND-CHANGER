@@ -2,11 +2,16 @@ import { useState } from "react";
 
 function App() {
   const [color, setColor] = useState("olive");
+  const [headingColor, setHeadingColor] = useState("black");
   return (
     <div
       className="w-full h-screen duration-200"
       style={{ backgroundColor: color }} //no curly braces for color as already a curly brace in style att
     >
+      <div className="heading">
+        <h1 className={`text-${headingColor}`}>Background Changer</h1>
+      </div>
+
       <div
         className="fixed flex flex-wrap 
       justify-center bottom-12 inset-x-0 px-2"
@@ -19,6 +24,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "red" }}
             onClick={() => {
+              setHeadingColor("white");
               setColor("red");
             }}
           >
@@ -28,6 +34,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "green" }}
             onClick={() => {
+              setHeadingColor("white");
               setColor("green");
             }}
           >
@@ -37,6 +44,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "blue" }}
             onClick={() => {
+              setHeadingColor("white");
               setColor("blue");
             }}
           >
@@ -46,6 +54,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-black shadow-lg"
             style={{ backgroundColor: "yellow" }}
             onClick={() => {
+              setHeadingColor("black");
               setColor("yellow");
             }}
           >
@@ -55,6 +64,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "orange" }}
             onClick={() => {
+              setHeadingColor("black");
               setColor("orange");
             }}
           >
@@ -64,6 +74,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-black shadow-lg"
             style={{ backgroundColor: "cyan" }}
             onClick={() => {
+              setHeadingColor("black");
               setColor("cyan");
             }}
           >
@@ -73,6 +84,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-black shadow-lg"
             style={{ backgroundColor: "lavender" }}
             onClick={() => {
+              setHeadingColor("black");
               setColor("lavender");
             }}
           >
@@ -82,6 +94,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "brown" }}
             onClick={() => {
+              setHeadingColor("white");
               setColor("brown");
             }}
           >
@@ -91,6 +104,7 @@ function App() {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "black" }}
             onClick={() => {
+              setHeadingColor("white");
               setColor("black");
             }}
           >
